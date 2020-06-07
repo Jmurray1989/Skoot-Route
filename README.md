@@ -8,7 +8,7 @@ Tasked to create a website combining knowledge from the Python Fundamentals, Pra
 
 ## Introducing you to
 <p align="center">
-  <img width="350" height="350" src="static/images/skoot-route-logo.png">
+  <img width="450" height="350" src="static/images/skoot-route-logo.png">
 </p>
 
 
