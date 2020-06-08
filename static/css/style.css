@@ -7,8 +7,90 @@ body {
 
 /*-------------------------------------Navbar-------------------------------------------*/
 
+.navbar {
+    background-color: #000000;
+}
+
 /*Nav Logo*/
 
+img.logo {
+    height: 5rem;
+}
+
+/*links*/
+
+a.nav-link {
+    color: #fafafa;
+    font-size: 1rem;
+}
+
+a.nav-link:hover {
+      color: #fd9a05; 
+}
+
+a.nav-link.active {
+    color: #fd9a05;
+}
+
+#active{
+      color: #fd9a05
+}
+
+/*Sign Up Button*/
+
+.sign-up {
+    background-color:  #fd9a05;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.sign-up:hover {
+    color: #fafafa; 
+}
+
+/*-------------------------------------Modal-------------------------------------------*/
+
+/*Modal Glow on Placeholers*/
+
+.form-elegant .font-small {
+    font-size: 0.8rem; 
+    }
+
+.form-elegant .z-depth-1a {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(248, 152, 7, 0.28), 0 4px 15px 0 rgba(248, 152, 7, 0.28);
+    box-shadow: 0 2px 5px 0 rgba(248, 152, 7, 0.28), 0 4px 15px 0 rgba(248, 152, 7, 0.28); 
+    }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(248, 152, 7, 0.28), 0 4px 15px 0 rgba(248, 152, 7, 0.28);
+    box-shadow: 0 5px 11px 0 rgba(248, 152, 7, 0.28), 0 4px 15px 0 rgba(248, 152, 7, 0.28); 
+    }
+
+.form-elegant .modal-header {
+    border-bottom: none; 
+    }
+
+.modal-dialog .form-elegant .btn .fab {
+    color: #000000; 
+    }
+
+.form-elegant .modal-body, .form-elegant .modal-footer {
+    font-weight: 400; 
+    }
+
+input#form-email1.form-control.validate.z-depth-1a {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(248, 152, 7, 0.28), 0 4px 15px 0 rgba(248, 152, 7, 0.28);
+    box-shadow: 0 2px 5px 0 rgba(248, 152, 7, 0.28), 0 4px 15px 0 rgba(248, 152, 7, 0.28);
+}
+
+button.btn.btn-block {
+    margin-top: 2rem;
+}
+
+input#fullname {
+    margin-bottom: 2rem;
+}
 
 
 /*-------------------------------------Homepage---------------------------------------------*/
