@@ -100,4 +100,43 @@ input#fullname {
 
 
 
+/*-------------------------------------Footer---------------------------------------------*/
+
+.page-footer {
+    background-color: #000000;
+    color: #fafafa;
+}
+
+.footer-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.social-icons {
+    font-size: 2rem;
+    color: #fafafa;
+}
+
+.social-icons:hover {
+    color: rgb(248, 152, 7);
+    text-decoration: none;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #fafafa;
+    font-size: 1.5rem;
+}
+
+.signature {
+    color: rgb(248, 152, 7);
+}
+
+a.signature:hover {
+    color: #fafafa;
+}
+
+.educational {
+    font-size: .7rem;
+}
 

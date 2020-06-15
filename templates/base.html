@@ -10,6 +10,10 @@
 
 	<title>Skoot-Route</title>
 
+	<!--Favicon-->
+
+	<link rel="icon" href="static/images/favicon.ico" type="favicon">
+
 	<!--Links-->
 
 	<!-- Fontawesome -->
@@ -19,7 +23,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-	<!-- My css stylesheet loaded after Bootstrap and other framework to ensure my styles take affect-->
+	<!-- My css stylesheet-->
 	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}" />
 
 	<!-- Scripts for email.js -->
@@ -92,8 +96,6 @@
 
 						<div class="modal-body mx-4">
 
-							<!--Body-->
-
 							<form onsubmit="return sendMail(this);" id="onSubmit">
 
 								<div class="md-form pb-3">
@@ -144,12 +146,52 @@
 
 	</nav>
 
-	<!--Main Image-->
 
 
-	<!--Page Slogan -->
 
+	<!--Footer-->
 
+	<footer class="page-footer">
+
+		<!--Footer Divider-->
+
+		<div class="footer-divider py-4 d-flex align-items-center">
+
+			<div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+				<h6 class="footer-title">Get connected with us on social networks!</h6>
+			</div>
+
+			<div class="col-md-6 col-lg-7 text-md-right">
+
+				<!--Facebook-->
+				<a href="https://www.facebook.com/" target="_blank" class="social-icons">
+					<i class="fab fa-facebook-f white-text mr-4"></i> </a>
+
+				<!--Twitter-->
+				<a href="https://www.twitter.com/" target="_blank" class="social-icons">
+					<i class="fab fa-twitter white-text mr-4"></i> </a>
+
+				<!--Instagram-->
+				<a href="https://www.instagram.com/" target="_blank" class="social-icons">
+					<i class="fab fa-instagram white-text mr-4"></i> </a>
+
+				<!--Youtube-->
+				<a href="https://www.youtube.com/" target="_blank" class="social-icons">
+					<i class="fab fa-youtube white-text mr-4"></i> </a>
+
+			</div>
+		</div>
+
+		<!-- Copyright -->
+
+		<div class="footer-copyright">© 2020 Copyright
+			<a href="https://github.com/Jmurray1989" target="_blank" class="signature"> John Murray
+				<i class="fa fa-github" aria-hidden="true"></i> </a>
+			<p class="educational">For Educational Purposes Only.</p>
+		</div>
+
+	</footer>
+	<!-- Footer -->
 
 </body>
 
