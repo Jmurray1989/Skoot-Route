@@ -8,11 +8,13 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<!-- Browser tab title -->
+
 	<title>Skoot-Route</title>
 
 	<!--Favicon-->
 
-	<link rel="icon" href="static/images/favicon.ico" type="favicon">
+	<link rel="icon" href="{{url_for('static', filename='images/favicon.ico')}}" type="favicon">
 
 	<!--Links-->
 
@@ -49,8 +51,8 @@
 
 			<div class="navbar-logo">
 				<div id="logo">
-					<a href="index.html">
-						<img src="static/images/skoot-route-logo.png" class="logo" alt="Skoot-Route logo"></a>
+					<a href="{{url_for('index')}}">
+						<img src="{{ url_for('static', filename='images/skoot-route-logo.png') }}" class="logo" alt="Skoot-Route logo"></a>
 
 				</div>
 			</div>
@@ -58,16 +60,19 @@
 			<!--Navbar-Links-->
 
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" id="active"
-						href="index.html"><i class="fas fa-home nav-icon" aria-hidden="true" id="nav"></i> Home</a>
+				<li class="nav-item">
+					<a class="nav-link"
+						href="{{url_for('index')}}"><i class="fas fa-home nav-icon" aria-hidden="true" id="nav"></i>
+						Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#technology"><i class="fas fa-file-alt nav-icon" aria-hidden="true"></i>
+					<a class="nav-link"
+						href="{{url_for('about')}}"><i class="fas fa-file-alt nav-icon" aria-hidden="true"></i>
 						About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#design"><i class="fas fa-directions nav-icon" aria-hidden="true"></i>
+					<a class="nav-link"
+						href="{{url_for('skoot')}}"><i class="fas fa-directions nav-icon" aria-hidden="true"></i>
 						Skoot Routes</a>
 				</li>
 			</ul>
@@ -146,8 +151,8 @@
 
 	</nav>
 
-
-
+	{% block content %}
+	{% endblock %}
 
 	<!--Footer-->
 
