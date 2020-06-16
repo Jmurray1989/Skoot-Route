@@ -99,7 +99,7 @@ input#fullname {
   margin-bottom: 2rem;
 }
 
-/*-------------------------------------Homepage---------------------------------------------*/
+/*-------------------------------------Homepage/Base---------------------------------------------*/
 
 /*Main Image*/
 
@@ -174,7 +174,6 @@ h1 {
 .social-icons {
   font-size: 1.5rem;
   color: #fafafa;
-  margin-top: 1rem;
 }
 
 .social-icons:hover {
@@ -204,3 +203,48 @@ a.signature:hover {
 .educational {
   font-size: 0.7rem;
 }
+
+/*-------------------------------------About Page---------------------------------------------*/
+
+/*Headers*/
+
+.about {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.about-header {
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: bolder;
+    text-decoration: underline;
+  -webkit-text-decoration-color: rgb(248, 152, 7);
+    text-decoration-color: rgb(248, 152, 7);
+}
+
+.about-desc {   
+    text-align: center;
+}
+
+/*Images*/
+
+.about-img1 {
+    padding-top: 1.5rem;
+    max-width: 100%;
+    height: 60vh;
+    float: left;
+    margin-right: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-img2 {
+    padding-top: 1.5rem;
+    max-width: 100%;
+    height: 60vh;
+    float: right;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
