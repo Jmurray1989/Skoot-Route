@@ -14,16 +14,25 @@ def index():
 
 @app.route('/about')
 def about():
+    """About page render"""
     return render_template('about.html')
 
 
 @app.route('/skoot')
 def skoot():
+    """Skoot Route page render"""
     return render_template('skootroute.html')
+
+
+@app.route('/mobile')
+def mobile():
+    """Mobile page render"""
+    return render_template('mobile.html')    
 
 
 @app.route('/skoot')
 def skoot_button():
+    """Button re-direct on homepage"""
     return redirect(url_for('skoot'))
 
 
