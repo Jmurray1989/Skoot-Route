@@ -1,12 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <!--Button-->
+<!--Main Image-->
 
-    <div class="skoot-button">
-        <a type="submit" href="{{ url_for('skoot') }}" class="go-button btn btn-lg">Lets Skoot!  <i class="fas fa-road"></i></a>
-    </div>
+<div class="main-image">
+	<div class="main-text">
+		<h1>Pick A Route</h1>
+		<p class="get-out">Get Out & Skoot!</p>
 
+		<!--Button-->
+
+		<div class="skoot-button">
+			<a type="submit" href="{{ url_for('skoot') }}" class="go-button btn btn-lg">Lets Skoot!
+				<i class="fas fa-road"></i></a>
+		</div>
+	</div>
+</div>
 
 {% endblock %}
-
