@@ -1,8 +1,15 @@
 import os
 from flask import Flask, render_template, redirect, request, url_for
+from flask_pymongo import PyMongo
+from bson.objectid import ObjectId 
 
 
 app = Flask(__name__)
+app.config["MONGO_DBNAME"] = os.getenv('MONGO_DBNAME', 'mongodb://localhost')
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+
+
+mongo = PyMongo(app)
 
 
 @app.route('/')
@@ -18,22 +25,21 @@ def about():
     return render_template('about.html')
 
 
-@app.route('/skoot')
-def skoot():
-    """Skoot Route page render"""
-    return render_template('skootroute.html')
+@app.route('/skootroutes')
+def skoot_routes():
+    return render_template("skootroute.html", my_routes=mongo.db.my_routes.find())
 
 
 @app.route('/mobile')
 def mobile():
     """Mobile page render"""
-    return render_template('mobile.html')    
+    return render_template('mobile.html')
 
 
-@app.route('/skoot')
+@app.route('/skootroutes')
 def skoot_button():
     """Button re-direct on homepage"""
-    return redirect(url_for('skoot'))
+    return redirect(url_for('skootroutes'))
 
 
 if __name__ == '__main__':
