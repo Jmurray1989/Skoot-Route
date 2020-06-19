@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Skoot-Route</h1>
+
+{% for route in routes %}
+        {{route.route_name}}
+        {{route.map_link}}
+        {{route.route_description}}
+        {{route.person_name}}
+    {% endfor %}
+
+{% endblock %}
