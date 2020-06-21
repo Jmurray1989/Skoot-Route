@@ -1,6 +1,30 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
-<h1>Mobile</h1>
+<!--Main Image-->
+
+<div class="mobile-main-image">
+
+  <!--Header-->
+
+  <h1 class="mobile-header">Download our app today</h1>
+
+  <!--Buttons-->
+
+  <div class="mobile-buttons">
+    <a href="https://play.google.com/store" target="_blank"
+      ><img
+        src="{{url_for('static', filename='images/google-badge.png')}}"
+        id="google-logo"
+        alt="google-logo"
+    /></a>
+
+    <a href="https://apps.apple.com" target="_blank"
+      ><img
+        src="{{url_for('static', filename='images/appstore-badge.png')}}"
+        id="apple-logo"
+        alt="apple-logo"
+    /></a>
+  </div>
+</div>
 
 {% endblock %}
