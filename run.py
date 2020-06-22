@@ -39,6 +39,11 @@ def mobile():
     return render_template('mobile.html')
 
 
+@app.route('/add_route')
+def add_route():
+    """Add Route"""
+    return render_template('addroute.html')
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
