@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Public Routes</h1>
+
+{% for route in routes %}
+{{route.route_name}}
+{{route.map_link}}
+{{route.route_description}}
+{{route.person_name}}
+{% endfor %}
+
+
+{% endblock %}

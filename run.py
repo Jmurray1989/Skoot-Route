@@ -30,7 +30,21 @@ def about():
 
 @app.route('/routes')
 def routes():
-    return render_template("routes.html", routes=mongo.db.routes.find())
+    """Skoot Routes page render"""
+    return render_template("routes.html")
+
+
+@app.route('/addroute')
+def addroute():
+    """Add route page render"""
+    return render_template('addroute.html')
+
+
+@app.route('/publicroutes')
+def publicroutes():
+    """Public Routes page render"""
+    return render_template('publicroutes.html', 
+    routes=mongo.db.tasks.find())
 
 
 @app.route('/mobile')
@@ -39,10 +53,24 @@ def mobile():
     return render_template('mobile.html')
 
 
+@app.route('/get_routes')
+def get_routes():
+    return render_template("routes.html")    
+
+
 @app.route('/add_route')
 def add_route():
     """Add Route"""
-    return render_template('addroute.html')
+    return render_template('addroute.html',
+    routes=mongo.db.routes.find())
+
+
+@app.route('/insert_route', methods=['POST'])
+def insert_route():
+    routes = mongo.db.routes
+    routes.insert_one(request.form.to_dict())
+    return redirect(url_for('get_routes'))
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
