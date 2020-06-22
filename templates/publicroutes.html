@@ -1,14 +1,16 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <h1>Public Routes</h1>
 
-{% for route in routes %}
-{{route.route_name}}
-{{route.map_link}}
-{{route.route_description}}
-{{route.person_name}}
-{% endfor %}
+{% for route in routes %} {{route.route_name}} {{route.map_link}}
+{{route.route_description}} {{route.person_name}} {% endfor %}
 
+<!--Button-->
+
+<div class="addroute-button">
+  <a type="submit" href="{{ url_for('addroute') }}" class="go-button btn btn-lg"
+    >Add Route <i class="fas fa-plus"></i
+  ></a>
+</div>
 
 {% endblock %}
