@@ -43,33 +43,26 @@ def addroute():
 @app.route('/publicroutes')
 def publicroutes():
     """Public Routes page render"""
-    return render_template('publicroutes.html', 
-    routes=mongo.db.tasks.find())
+    return render_template('publicroutes.html', routes=mongo.db.routes.find())
 
 
 @app.route('/mobile')
 def mobile():
     """Mobile page render"""
-    return render_template('mobile.html')
-
-
-@app.route('/get_routes')
-def get_routes():
-    return render_template("routes.html")    
+    return render_template('mobile.html')    
 
 
 @app.route('/add_route')
 def add_route():
     """Add Route"""
-    return render_template('addroute.html',
-    routes=mongo.db.routes.find())
+    return render_template('publicroutes.html')
 
 
 @app.route('/insert_route', methods=['POST'])
 def insert_route():
     routes = mongo.db.routes
     routes.insert_one(request.form.to_dict())
-    return redirect(url_for('get_routes'))
+    return redirect(url_for('publicroutes'))
 
 
 if __name__ == '__main__':
