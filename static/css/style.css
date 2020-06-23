@@ -207,6 +207,13 @@ a.signature:hover {
 
 /*-------------------------------------About Page---------------------------------------------*/
 
+/* Gradient Effect on Home*/
+
+.about {
+  background-color: #ffffff;; /* For browsers that do not support gradients */
+  background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(248, 152, 7, 0.274));  
+}
+
 /*Headers*/
 
 .header-main-about {
@@ -290,14 +297,64 @@ a.signature:hover {
     margin-bottom: 1.5rem;
 }
 
-/*-----------------------------------Background Color-----------------------------------*/
+/*-------------------------------------Skoot Routes---------------------------------------------*/
 
-/* Gradient Effect on Home*/
+/*Images*/
+
+.skoot-route-img {
+margin-top: 35px;
+margin-bottom: 20px;
+}
+
+/*Headers*/
+
+h1.route-header {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*Dividers & Sections*/
+
+p.locations {
+  text-align: center;
+  letter-spacing: 1px; 
+  margin: 50px 10vw;
+  margin-bottom: 0;
+  padding-bottom: 50px; 
+}
+
+.skoot-route-divider {
+    margin-top: 2rem;
+}
+
+hr.space-route-p {
+  border: 2px solid rgb(255, 153, 0);
+  width: 20%;
+}
+
+.route {
+    text-align: center; 
+}
+
+p.skoot-route {
+    display: grid;
+    margin: 50px 25vw;
+}
 
 
-.about {
-  background-color: #ffffff;; /* For browsers that do not support gradients */
-  background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(248, 152, 7, 0.274));  
+/*Buttons*/
+
+.skoot-route-button {
+    background-color: rgb(255, 153, 0);
+    color: #000000;
+    border: 2px #000000 solid;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.skoot-route-button:hover {
+    color: #ffffff; 
 }
 
 
@@ -307,6 +364,8 @@ a.signature:hover {
 
 .addroute-button {
   text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 
