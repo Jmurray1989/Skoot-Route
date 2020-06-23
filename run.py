@@ -49,17 +49,12 @@ def publicroutes():
 @app.route('/mobile')
 def mobile():
     """Mobile page render"""
-    return render_template('mobile.html')    
-
-
-@app.route('/add_route')
-def add_route():
-    """Add Route"""
-    return render_template('publicroutes.html')
+    return render_template('mobile.html')
 
 
 @app.route('/insert_route', methods=['POST'])
 def insert_route():
+    """Adds Your Route To Public Route Page"""
     routes = mongo.db.routes
     routes.insert_one(request.form.to_dict())
     return redirect(url_for('publicroutes'))

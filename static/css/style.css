@@ -310,7 +310,7 @@ margin-bottom: 20px;
 
 h1.route-header {
     text-align: center;
-    padding-top: 50px;
+    padding: 2rem;
 }
 
 /*Dividers & Sections*/
@@ -360,6 +360,13 @@ p.skoot-route {
 
 /*-------------------------------------Public Routes---------------------------------------------*/
 
+/*Headers*/
+
+h1.public-header {
+    text-align: center;
+    padding: 2rem;
+}
+
 /*Button*/
 
 .addroute-button {
@@ -368,9 +375,7 @@ p.skoot-route {
   margin-bottom: 5rem;
 }
 
-
-
-
+/*-------------------------------------Add Routes---------------------------------------------*/
 
 
 /*-------------------------------------Mobile---------------------------------------------*/
