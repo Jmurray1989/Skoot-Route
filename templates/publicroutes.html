@@ -2,8 +2,30 @@
 
 <h1>Public Routes</h1>
 
-{% for route in routes %} {{route.route_name}} {{route.map_link}}
-{{route.route_description}} {{route.person_name}} {% endfor %}
+<section class="route-section">
+  <div class="container">
+    <div class="row route-cards-row">
+      {% for route in routes %}
+      <div class="col-sm-12 col-md-6 route-cards card">
+        <div class="card-body route-cards-body text-center">
+          <p class="card-text">
+            <span class="label">Name:</span> {{ route.person_name }}
+          </p>
+          <p class="card-text">
+            <span class="label">Route Name:</span> {{ route.route_name }}
+          </p>
+          <p class="card-text">
+            <span class="label">Google Map Link:</span> {{ route.map_link }}
+          </p>
+          <p class="card-text">
+            <span class="label">Route Description:</span> {{ route.route_description }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 <!--Button-->
 
