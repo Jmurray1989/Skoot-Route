@@ -104,9 +104,18 @@ input#fullname {
 /*Main Image*/
 
 .main-image {
-  background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../images/route-image.jpg");
-  background:-o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/route-image.jpg");
-  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/route-image.jpg");
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url("../images/route-image.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/route-image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/route-image.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -127,21 +136,21 @@ input#fullname {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #EBECEC;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #ebecec;
 }
 
 h1 {
- font-weight: bold;
- text-decoration: underline;
- -webkit-text-decoration-color: rgba(248, 152, 7);
- text-decoration-color: rgba(248, 152, 7);
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(248, 152, 7);
+  text-decoration-color: rgba(248, 152, 7);
 }
 
 .get-out {
-    font-size: 1.2rem;
-    font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /*Button*/
@@ -183,7 +192,7 @@ h1 {
 }
 
 .footer-line {
-    background-color: rgb(248, 152, 7);
+  background-color: rgb(248, 152, 7);
 }
 
 .footer-copyright {
@@ -210,91 +219,94 @@ a.signature:hover {
 /* Gradient Effect on Home*/
 
 .about {
-  background-color: #ffffff;; /* For browsers that do not support gradients */
-  background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(248, 152, 7, 0.274));  
+  background-color: #ffffff; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(248, 152, 7, 0.274)
+  );
 }
 
 /*Headers*/
 
 .header-main-about {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 .about-header {
-    text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    font-weight: bolder;
-    text-decoration: underline;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  text-decoration: underline;
   -webkit-text-decoration-color: rgb(248, 152, 7);
-    text-decoration-color: rgb(248, 152, 7);
+  text-decoration-color: rgb(248, 152, 7);
 }
 
 /*Paragraphs & Page Links*/
 
-.about-desc {   
-    text-align: center;
+.about-desc {
+  text-align: center;
 }
 
 .about-route {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .about-route-desc {
-    margin: 2rem 20vw;
-    line-height: 2rem;
-    text-align: center;
+  margin: 2rem 20vw;
+  line-height: 2rem;
+  text-align: center;
 }
 
 .route-link {
-    color: #000000;
-    text-decoration: underline;
-    font-size: 1rem;
-    font-weight: bold;
+  color: #000000;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .route-link:hover {
-    color: rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
 }
 
 .mobile-link {
-    color: #000000;
-    text-decoration: underline;
-    font-size: 1rem;
-    font-weight: bold;
+  color: #000000;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .mobile-link:hover {
-    color: rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
 }
 
 /*Images*/
 
 .about-img1 {
-    padding-top: 1.5rem;
-    max-width: 100%;
-    height: 60vh;
-    float: left;
-    margin-right: 5rem;
-    margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  max-width: 100%;
+  height: 60vh;
+  float: left;
+  margin-right: 5rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-img2 {
-    padding-top: 1.5rem;
-    max-width: 100%;
-    height: 60vh;
-    float: right;
-    margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  max-width: 100%;
+  height: 60vh;
+  float: right;
+  margin-bottom: 1.5rem;
 }
 
 .about-img3 {
-    padding-top: 1.5rem;
-    max-width: 100%;
-    height: 60vh;
-    float: left;
-    margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  max-width: 100%;
+  height: 60vh;
+  float: left;
+  margin-bottom: 1.5rem;
 }
 
 /*-------------------------------------Skoot Routes---------------------------------------------*/
@@ -302,29 +314,29 @@ a.signature:hover {
 /*Images*/
 
 .skoot-route-img {
-margin-top: 35px;
-margin-bottom: 20px;
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 /*Headers*/
 
 h1.route-header {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 /*Dividers & Sections*/
 
 p.locations {
   text-align: center;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   margin: 50px 10vw;
   margin-bottom: 0;
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
 }
 
 .skoot-route-divider {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 hr.space-route-p {
@@ -333,49 +345,59 @@ hr.space-route-p {
 }
 
 .route {
-    text-align: center; 
+  text-align: center;
 }
 
 p.skoot-route {
-    display: grid;
-    margin: 50px 25vw;
+  display: grid;
+  margin: 50px 25vw;
 }
-
 
 /*Buttons*/
 
 .skoot-route-button {
-    background-color: rgb(255, 153, 0);
-    color: #000000;
-    border: 2px #000000 solid;
-    border-radius: 30px;
-    margin-bottom: 2rem;
-    padding: 1rem;
+  background-color: rgb(255, 153, 0);
+  color: #000000;
+  border: 2px #000000 solid;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .skoot-route-button:hover {
-    color: #ffffff; 
+  color: #ffffff;
 }
-
 
 /*-------------------------------------Public Routes---------------------------------------------*/
 
 /*Headers*/
 
 h1.public-header {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 /*Cards*/
 
 .label {
-    font-weight: bolder;
-    text-decoration: underline rgb(255, 153, 0);
-    
+  font-weight: bolder;
+  text-decoration: underline rgb(255, 153, 0);
 }
 
+.route-cards-row {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 
+.route-cards {
+  border: 2px solid #000000;
+  padding: 1rem;
+  margin: 1rem;
+  -webkit-box-shadow: 0 3px 4px rgba(29, 29, 29, 0.6);
+  box-shadow: 0 3px 4px rgba(29, 29, 29, 0.6);
+  
+}
 
 /*Buttons*/
 
@@ -386,40 +408,48 @@ h1.public-header {
 }
 
 a.btn.edit_btn {
-    background-color: #000000;
-    color: #ffffff;
-    border: 2px #000000 solid;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px #000000 solid;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 a.btn.delete_btn {
-    background-color: rgb(255, 153, 0);
-    border: 2px rgb(255, 153, 0) solid;
-    border-radius: 10px;
-     margin-bottom: 1rem;
+  background-color: rgb(255, 153, 0);
+  border: 2px rgb(255, 153, 0) solid;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 a.btn.delete_btn:hover {
-    background-color: #000000;
-    color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 a.btn.edit_btn:hover {
-    background-color: rgb(255, 153, 0);
+  background-color: rgb(255, 153, 0);
 }
 
 /*-------------------------------------Add Routes---------------------------------------------*/
-
 
 /*-------------------------------------Mobile---------------------------------------------*/
 
 /*Main Image*/
 
 .mobile-main-image {
-  background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../images/mobile-img.jpg");
-  background:-o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/mobile-img.jpg");
-  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/mobile-img.jpg");
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url("../images/mobile-img.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/mobile-img.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/mobile-img.jpg");
   height: 100vh;
   background-attachment: scroll;
   background-position: center;
@@ -434,19 +464,19 @@ a.btn.edit_btn:hover {
 /*Headers*/
 
 h1.mobile-header {
- font-weight: bolder;
- font-size: 1.3em;
- text-decoration: underline;
- -webkit-text-decoration-color: rgba(248, 152, 7);
- text-decoration-color: rgba(248, 152, 7);
-   text-align: center;
+  font-weight: bolder;
+  font-size: 1.3em;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(248, 152, 7);
+  text-decoration-color: rgba(248, 152, 7);
+  text-align: center;
   position: absolute;
   top: 68%;
   left: 48%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #EBECEC;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #ebecec;
 }
 
 /*Download Buttons*/
@@ -458,17 +488,15 @@ h1.mobile-header {
   top: 75%;
   left: 48.2%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          letter-spacing: 0.2rem;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.2rem;
 }
 
 /*Download App Images*/
 
 img#google-logo,
 img#apple-logo {
-    width: 7.35rem;
-    height: 46px;
+  width: 7.35rem;
+  height: 46px;
 }
-
-
