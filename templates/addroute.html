@@ -1,36 +1,65 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
-<h3>Add Route</h3>
+<h1 class="add_route_header">Add Route</h1>
 
-<div class="row form">
+<!-- Add Route Form -->
+<form
+  class="col-sm-10 col-md-6 container text-center p-5 route_form"
+  action="{{ url_for('insert_route') }}"
+  method="POST"
+>
+  <p class="route-slogan">
+    Share your favourite route here for others to enjoy!
+  </p>
 
-	<!-- Add Route Form -->
-	<form class="col-12 text-center border border-light p-5" action="{{ url_for('insert_route') }}" method="POST">
+  <!-- Your Name -->
+  <input
+    type="text"
+    id="person_name"
+    name="person_name"
+    class="form-control mb-4"
+    placeholder="&#xF406; Enter Your Name Here"
+    style="font-family: FontAwesome;"
+  />
 
-		<p class="h4 mb-4">Add Route</p>
+  <!-- Route Name -->
+  <input
+    type="text"
+    id="route_name"
+    name="route_name"
+    class="form-control mb-4"
+    placeholder="&#xF3c5; Give Your Skoot Route A Name"
+    style="font-family: FontAwesome;"
+  />
 
-		<!-- Your Name -->
-		<input type="text" id="person_name" name="person_name" class="form-control mb-4" placeholder="&#xF406; Enter Your Name Here" style="font-family: FontAwesome">
+  <!-- Route Link -->
+  <input
+    type="text"
+    id="map_link"
+    name="map_link"
+    class="form-control mb-4"
+    placeholder="&#xF5a0; Attach Your Google Maps Link Here"
+    style="font-family: FontAwesome;"
+  />
 
-		<!-- Route Name -->
-		<input type="text" id="route_name" name="route_name" class="form-control mb-4" placeholder="&#xF3c5; Give Your Skoot Route A Name" style="font-family: FontAwesome">
+  <!-- Route Description -->
+  <div class="form-group">
+    <textarea
+      class="form-control rounded-0"
+      id="route_description"
+      name="route_description"
+      rows="5"
+      placeholder="&#xF303; Tell Us Why You Love This Route"
+      style="font-family: FontAwesome;"
+    ></textarea>
+  </div>
 
-		<!-- Route Link -->
-		<input type="text" id="map_link" name="map_link" class="form-control mb-4" placeholder="&#xF5a0; Attach Your Google Maps Link Here" style="font-family: FontAwesome">
-
-		<!-- Route Description -->
-		<div class="form-group">
-			<textarea class="form-control rounded-0" id="route_description" name="route_description" rows="5" placeholder="&#xF303; Tell Us Why You Love This Route" style="font-family: FontAwesome"></textarea>
-		</div>
-
-		<!-- Send button -->
-		<div class="row">
-			<button class="btn btn-info btn-block" type="submit" name="action">Add Route 
-        <i class="fas fa-paper-plane"></i></button>
-		</div>
-
-	</form>
-</div>
+  <!-- Send button -->
+  <div class="row">
+    <button class="add_button btn btn-info btn-block" type="submit" name="action">
+      Add Route <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</form>
 
 {% endblock %}
