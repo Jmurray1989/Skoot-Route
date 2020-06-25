@@ -60,6 +60,18 @@ def insert_route():
     return redirect(url_for('publicroutes'))
 
 
+@app.route('/edit_route/<route_id>')
+def edit_route(route_id):
+    the_route = mongo.db.routes.find({"_id": ObjectId(route_id)})
+    return render_template('editroute.html', route=the_route,)
+
+
+@app.route('/delete_route/<route_id>')
+def delete_route(route_id):
+    mongo.db.routes.remove({'_id': ObjectId(route_id)})
+    return redirect(url_for('publicroutes'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
