@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+
+
+<div class="error404-image">
+	<div class="error404-text">
+		<h1>OOPS.... Something has gone wrong</h1>
+		<p class="error">Let's take you</p>
+
+		<!--Button-->
+
+			<a type="submit" href="{{ url_for('index') }}" class="home-button btn btn-lg">Home
+				<i class="fas fa-home"></i></a>
+	</div>
+</div>
+
+
+{% endblock %}
