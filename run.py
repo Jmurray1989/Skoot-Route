@@ -14,6 +14,8 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 
 mongo = PyMongo(app)
 
+# Page renders
+
 
 @app.route('/')
 @app.route('/index')
@@ -51,6 +53,8 @@ def mobile():
     """Mobile page render"""
     return render_template('mobile.html')
 
+# Add, Edit & Delete Routes
+
 
 @app.route('/insert_route', methods=['POST'])
 def insert_route():
@@ -62,15 +66,30 @@ def insert_route():
 
 @app.route('/edit_route/<route_id>')
 def edit_route(route_id):
+    """Edits Your Route on the Public Route Page"""
     the_route = mongo.db.routes.find_one({"_id": ObjectId(route_id)})
-    print(the_route)
     return render_template('editroute.html', route=the_route)
 
 
 @app.route('/delete_route/<route_id>')
 def delete_route(route_id):
+    """Deletes Your Route from the Public Route Page"""
     mongo.db.routes.remove({'_id': ObjectId(route_id)})
     return redirect(url_for('publicroutes'))
+
+
+# Error Handling of 404 & 500
+
+@app.errorhandler(404)
+def page_error(error):
+    """Custom 500 error page displayed when captured"""
+    return render_template("404.html"), 404
+
+
+@app.errorhandler(500)
+def page_error_500(error):
+    """Custom 500 error page displayed when captured"""
+    return render_template('500.html'), 500
 
 
 if __name__ == '__main__':
