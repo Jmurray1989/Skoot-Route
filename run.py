@@ -62,7 +62,8 @@ def insert_route():
 
 @app.route('/edit_route/<route_id>')
 def edit_route(route_id):
-    the_route = mongo.db.routes.find({"_id": ObjectId(route_id)})
+    the_route = mongo.db.routes.find_one({"_id": ObjectId(route_id)})
+    print(the_route)
     return render_template('editroute.html', route=the_route,)
 
 

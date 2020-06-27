@@ -38,8 +38,10 @@
     id="map_link"
     name="map_link"
     class="form-control mb-4"
-    placeholder="&#xF5a0; Attach Your Google Maps Link Here"
+    placeholder="&#xF5a0; Attach Your Google Maps Link Here (Must include https://)"
     style="font-family: FontAwesome;"
+    pattern="https://.*"
+    required
   />
 
   <!-- Route Description -->
@@ -56,7 +58,11 @@
 
   <!-- Send button -->
   <div class="row">
-    <button class="add_button btn btn-info btn-block" type="submit" name="action">
+    <button
+      class="add_button btn btn-info btn-block"
+      type="submit"
+      name="action"
+    >
       Add Route <i class="fas fa-paper-plane"></i>
     </button>
   </div>
