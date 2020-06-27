@@ -1,6 +1,17 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1> You have broken the site....</h1>
+<!-- Error 500-->
+
+<div class="error500-image">
+	<div class="error500-text">
+		<p class="error">Let's take you</p>
+
+		<!--Button-->
+
+			<a type="submit" href="{{ url_for('index') }}" class="home-button btn btn-lg">Home
+				<i class="fas fa-home"></i></a>
+	</div>
+</div>
 
 
 {% endblock %}

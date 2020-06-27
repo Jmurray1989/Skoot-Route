@@ -82,14 +82,14 @@ def delete_route(route_id):
 
 @app.errorhandler(404)
 def page_error(error):
-    """Custom 500 error page displayed when captured"""
+    """Custom 404 error page displayed when captured"""
     return render_template("404.html"), 404
 
 
 @app.errorhandler(500)
-def page_error_500(error):
+def error_500(error):
     """Custom 500 error page displayed when captured"""
-    return render_template('500.html'), 500
+    return render_template("500.html")
 
 
 if __name__ == '__main__':
