@@ -697,7 +697,52 @@ button.sign-up {
 div#logo {
     text-align: center;
     margin-bottom: .5rem;
+}
 
+/* HomePage */
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Adjusts images into frame on mobile*/
+.main-image {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url("../images/mobile/route-imagemob.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/mobile/route-imagemob.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/mobile/route-imagemob.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+/* About Page */
+
+.about-route-desc {
+    margin: 1.5rem;
+}
+
+}
+
+/*-----------------------------Tablet-----------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+/* Navbar */
 
 
 
