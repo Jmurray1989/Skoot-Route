@@ -393,6 +393,7 @@ h1.public-header {
 }
 
 .video {
+    font-size: 1.3rem;
     font-weight: bolder;
     color: #000000;
 }
