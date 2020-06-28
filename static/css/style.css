@@ -752,7 +752,29 @@ p.skoot-route {
     margin: 2rem;
 }
 
+/* Mobile App Page */
 
+h1.mobile-header {
+    top: 5%;
+    left: 47%;
+    font-size: 1.2rem;
+}
+
+.mobile-buttons {
+    top: 10%;
+    left: 47%;
+}
+
+img {
+     vertical-align: unset;
+     height: 2.5rem;
+}
+
+img#google-logo,
+img#apple-logo {
+    width: auto;
+    height: 2rem;
+}
 
 }
 
