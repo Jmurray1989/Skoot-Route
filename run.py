@@ -68,14 +68,14 @@ def insert_route():
 def edit_route(route_id):
     """Edits Your Route on the Public Route Page"""
     the_route = mongo.db.routes.find_one({"_id": ObjectId(route_id)})
-    return render_template('editroute.html', route=the_route)
+    return redirect(url_for('publicroutes', route=the_route))
 
 
 @app.route('/update_route/<route_id>', methods=["POST"])
 def update_route(route_id):
     """Updates Your Route on the Public Route Page"""
-    route = mongo.db.routes
-    route.update({'_id': ObjectId(route_id)}, {
+    routes = mongo.db.routes
+    routes.update({'_id': ObjectId(route_id)}, {
         'person_name': request.form.get('person_name'),
         'route_name': request.form.get('route_name'),
         'map_link': request.form.get('map_link'),

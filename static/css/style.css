@@ -357,6 +357,10 @@ p.skoot-route {
   margin: 50px 25vw;
 }
 
+.routes-para {
+    font-weight: bold;
+}
+
 /*Buttons*/
 
 .skoot-route-button {
@@ -379,6 +383,30 @@ p.skoot-route {
 h1.public-header {
   text-align: center;
   padding: 2rem;
+}
+
+/*Video Link*/
+
+.how_video {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.video {
+    font-weight: bolder;
+    color: #000000;
+}
+
+.video:hover {
+    color: rgb(255, 153, 0);
+}
+
+.map_link {
+    color: rgb(255, 153, 0);
+}
+
+.map_link:hover {
+    color: #000000;
 }
 
 /*Cards*/
