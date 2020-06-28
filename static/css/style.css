@@ -736,6 +736,16 @@ h1 {
     margin: 1.5rem;
 }
 
+.about-img1,
+.about-img2, 
+.about-img3 {
+    height: 40vh;
+}
+
+.about-desc {
+    margin-bottom: 3rem;
+}
+
 }
 
 /*-----------------------------Tablet-----------------------------*/
