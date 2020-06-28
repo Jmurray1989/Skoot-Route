@@ -39,7 +39,7 @@ def routes():
 @app.route('/addroute')
 def addroute():
     """Add route page render"""
-    return render_template('addroute.html')
+    return render_template('addroute.html', routes=mongo.db.routes.find())
 
 
 @app.route('/publicroutes')
@@ -68,7 +68,20 @@ def insert_route():
 def edit_route(route_id):
     """Edits Your Route on the Public Route Page"""
     the_route = mongo.db.routes.find_one({"_id": ObjectId(route_id)})
-    return render_template('editroute.html', route=the_route)
+    return redirect(url_for('publicroutes', route=the_route))
+
+
+@app.route('/update_route/<route_id>', methods=["POST"])
+def update_route(route_id):
+    """Updates Your Route on the Public Route Page"""
+    routes = mongo.db.routes
+    routes.update({'_id': ObjectId(route_id)}, {
+        'person_name': request.form.get('person_name'),
+        'route_name': request.form.get('route_name'),
+        'map_link': request.form.get('map_link'),
+        'route_description': request.form.get('route_description')
+        })
+    return redirect(url_for('publicroutes'))
 
 
 @app.route('/delete_route/<route_id>')
@@ -89,7 +102,7 @@ def page_error(error):
 @app.errorhandler(500)
 def error_500(error):
     """Custom 500 error page displayed when captured"""
-    return render_template("500.html")
+    return render_template("500.html"), 500
 
 
 if __name__ == '__main__':
