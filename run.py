@@ -1,3 +1,5 @@
+# Imports
+
 import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
@@ -6,6 +8,7 @@ from os import path
 if path.exists("env.py"):
     import env
 
+# Mongo URI & DBNAME Stored in Enviroment Variable
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
@@ -103,6 +106,8 @@ def page_error(error):
 def error_500(error):
     """Custom 500 error page displayed when captured"""
     return render_template("500.html"), 500
+
+# IP & PORT CONFIG
 
 
 if __name__ == '__main__':
