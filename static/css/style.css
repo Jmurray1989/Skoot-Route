@@ -721,6 +721,10 @@ h1 {
   -webkit-background-size: cover;
 }
 
+.go-button {
+    margin: 0;
+}
+
 /* About Page */
 
 .about-route-desc {
