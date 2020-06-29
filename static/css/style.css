@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*-------------------------------------Fonts---------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 
@@ -17,7 +24,7 @@ img.logo {
   height: 5rem;
 }
 
-/*links*/
+/* Nav Links*/
 
 a.nav-link {
   color: #fafafa;
@@ -104,15 +111,9 @@ input#fullname {
 /*Main Image*/
 
 .main-image {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.4)),
-      to(rgba(0, 0, 0, 0.4))
-    ),
-    url("../images/route-image.jpg");
   background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/route-image.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),
     url("../images/route-image.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/route-image.jpg");
@@ -224,10 +225,21 @@ a.signature:hover {
 
 .about {
   background-color: #ffffff; /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(255, 255, 255, 0.5)),
+    to(rgba(248, 152, 7, 0.274))
+  );
+  background-image: -o-linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(248, 152, 7, 0.274)
+  );
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.5),
     rgba(248, 152, 7, 0.274)
   );
+  
 }
 
 /*Headers*/
@@ -353,6 +365,7 @@ hr.space-route-p {
 }
 
 p.skoot-route {
+  display: -ms-grid;
   display: grid;
   margin: 50px 25vw;
 }
@@ -414,7 +427,8 @@ h1.public-header {
 
 .label {
   font-weight: bolder;
-  text-decoration: underline rgb(255, 153, 0);
+  -webkit-text-decoration: underline rgb(255, 153, 0);
+          text-decoration: underline rgb(255, 153, 0);
 }
 
 .route-cards-row {
@@ -501,15 +515,9 @@ a.btn.edit_btn:hover {
 /*Main Image*/
 
 .mobile-main-image {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.4)),
-      to(rgba(0, 0, 0, 0.4))
-    ),
-    url("../images/mobile-img2.jpg");
   background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/mobile-img2.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),
     url("../images/mobile-img2.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/mobile-img2.jpg");
@@ -560,15 +568,9 @@ img#apple-logo {
 /*Main Error 404 Image*/
 
 .error404-image {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.2)),
-      to(rgba(0, 0, 0, 0.2))
-    ),
-    url("../images/404.png");
   background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/404.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
     url("../images/404.png");
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/404.png");
@@ -625,15 +627,9 @@ h1 {
 /*Main Error 500 Image*/
 
 .error500-image {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.2)),
-      to(rgba(0, 0, 0, 0.2))
-    ),
-    url("../images/500.jpg");
   background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/500.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
     url("../images/500.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/500.jpg");
@@ -697,15 +693,9 @@ h1 {
 
   /* Adjusts images into frame on mobile*/
   .main-image {
-    background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(0, 0, 0, 0.4)),
-        to(rgba(0, 0, 0, 0.4))
-      ),
-      url("../images/mobile/route-imagemob.jpg");
     background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),
       url("../images/mobile/route-imagemob.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("../images/mobile/route-imagemob.jpg");
@@ -764,15 +754,9 @@ h1 {
 
   /* Adjusts images into frame on Tablet*/
   .main-image {
-    background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(0, 0, 0, 0.4)),
-        to(rgba(0, 0, 0, 0.4))
-      ),
-      url("../images/mobile/route-imagemob.jpg");
     background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),
       url("../images/mobile/route-imagemob.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("../images/mobile/route-imagemob.jpg");
@@ -814,15 +798,9 @@ h1 {
 
   /* Adjusts images into frame on Tablet*/
   .main-image {
-    background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(0, 0, 0, 0.4)),
-        to(rgba(0, 0, 0, 0.4))
-      ),
-      url("../images/mobile/route-imagemob.jpg");
     background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),
       url("../images/mobile/route-imagemob.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("../images/mobile/route-imagemob.jpg");
