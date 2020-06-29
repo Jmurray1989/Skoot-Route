@@ -693,7 +693,7 @@ div#logo {
 /* HomePage */
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 /* Adjusts images into frame on mobile*/
@@ -711,7 +711,7 @@ h1 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/mobile/route-imagemob.jpg");
   height: 100vh;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
