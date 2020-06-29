@@ -12,6 +12,29 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
+/*-------------------------------------Gradient Effect---------------------------------------------*/
+
+/* Gradient Effect on All pages*/
+
+body {
+  background-color: #ffffff; /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(255, 255, 255, 0.5)),
+    to(rgba(248, 152, 7, 0.274))
+  );
+  background-image: -o-linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(248, 152, 7, 0.274)
+  );
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(248, 152, 7, 0.274)
+  );
+  
+}
+
 /*-------------------------------------Navbar-------------------------------------------*/
 
 .navbar {
@@ -220,27 +243,6 @@ a.signature:hover {
 }
 
 /*-------------------------------------About Page---------------------------------------------*/
-
-/* Gradient Effect on Home*/
-
-.about {
-  background-color: #ffffff; /* For browsers that do not support gradients */
-  background-image: -webkit-gradient(
-    linear,
-    left top, left bottom,
-    from(rgba(255, 255, 255, 0.5)),
-    to(rgba(248, 152, 7, 0.274))
-  );
-  background-image: -o-linear-gradient(
-    rgba(255, 255, 255, 0.5),
-    rgba(248, 152, 7, 0.274)
-  );
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.5),
-    rgba(248, 152, 7, 0.274)
-  );
-  
-}
 
 /*Headers*/
 
