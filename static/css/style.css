@@ -753,9 +753,45 @@ p.skoot-route {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-/* Navbar */
+/* Home */
+
+/* Adjusts images into frame on Tablet*/
+.main-image {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url("../images/mobile/route-imagemob.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/mobile/route-imagemob.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/mobile/route-imagemob.jpg");
+  height: 100vh;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+/* About */
+
+p.about-desc {
+    margin-bottom: 3rem;
+}
+
+/* Skoot Routes */
+
+p.skoot-route {
+    margin: 50px;
+}
 
 
 
-
-
+}
