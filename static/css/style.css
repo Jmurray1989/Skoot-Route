@@ -169,7 +169,7 @@ h1 {
 }
 
 .go-button:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /*-------------------------------------Footer---------------------------------------------*/
@@ -358,7 +358,7 @@ p.skoot-route {
 }
 
 .routes-para {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /*Buttons*/
@@ -388,26 +388,26 @@ h1.public-header {
 /*Video Link*/
 
 .how_video {
-    text-align: center;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .video {
-    font-size: 1.3rem;
-    font-weight: bolder;
-    color: #000000;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #000000;
 }
 
 .video:hover {
-    color: rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
 }
 
 .map_link {
-    color: rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
 }
 
 .map_link:hover {
-    color: #000000;
+  color: #000000;
 }
 
 /*Cards*/
@@ -534,10 +534,10 @@ h1.mobile-header {
 }
 
 .orange-divider {
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(248, 152, 7);
-    width: 100vw;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(248, 152, 7);
+  width: 100vw;
 }
 
 /*Download Buttons*/
@@ -616,8 +616,8 @@ h1 {
   font-weight: bold;
 }
 
-.home-button:hover{
-    color: #ffffff;
+.home-button:hover {
+  color: #ffffff;
 }
 
 /*-------------------------------------Error 500---------------------------------------------*/
@@ -664,134 +664,195 @@ h1 {
 /*-------------------------------------------Media Queries-------------------------------------------*/
 
 /* Mobile devices (Mobile phones, 576px and up) */
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
+  /* Navbar */
 
-/* Navbar */
-
-button.navbar-toggler.ml-auto {
+  button.navbar-toggler.ml-auto {
     background-color: rgb(248, 152, 7);
     color: white;
-    font-size: 1.5rem; 
-}
+    font-size: 1.5rem;
+  }
 
-a.nav-link {
+  a.nav-link {
     display: block;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     font-size: 1.5rem;
-}
+  }
 
-button.sign-up {
+  button.sign-up {
     margin: 1rem;
-}
+  }
 
-div#logo {
+  div#logo {
     text-align: center;
-    margin-bottom: .5rem;
-}
+    margin-bottom: 0.5rem;
+  }
 
-/* HomePage */
+  /* HomePage */
 
-h1 {
+  h1 {
     font-size: 1.5rem;
-}
+  }
 
-/* Adjusts images into frame on mobile*/
-.main-image {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.4)),
-      to(rgba(0, 0, 0, 0.4))
-    ),
-    url("../images/mobile/route-imagemob.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/mobile/route-imagemob.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/mobile/route-imagemob.jpg");
-  height: 100vh;
-  background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-}
+  /* Adjusts images into frame on mobile*/
+  .main-image {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.4)),
+        to(rgba(0, 0, 0, 0.4))
+      ),
+      url("../images/mobile/route-imagemob.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
 
-.go-button {
+  .go-button {
     margin: 0;
-}
+  }
 
-/* About Page */
+  /* About Page */
 
-.about-route-desc {
+  .about-route {
+    font-size: 1.2rem;
+  }
+
+  .about-route-desc {
     margin: 1.5rem;
-}
+  }
 
-.about-img1,
-.about-img2, 
-.about-img3 {
+  .about-img1,
+  .about-img2,
+  .about-img3 {
     height: 40vh;
-}
+  }
 
-.about-desc {
+  .about-desc {
     margin-bottom: 3rem;
-}
+  }
 
-/* Skoot Route Page */
+  /* Skoot Route Page */
 
-p.skoot-route {
+  p.skoot-route {
     margin: 2rem;
-}
+  }
 
+  /* Public Route Page */
+
+  .video {
+    font-size: 1rem;
+  }
 }
 
 /*-----------------------------Tablet-----------------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Home */
 
-/* Home */
+  /* Adjusts images into frame on Tablet*/
+  .main-image {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.4)),
+        to(rgba(0, 0, 0, 0.4))
+      ),
+      url("../images/mobile/route-imagemob.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
 
-/* Adjusts images into frame on Tablet*/
-.main-image {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.4)),
-      to(rgba(0, 0, 0, 0.4))
-    ),
-    url("../images/mobile/route-imagemob.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/mobile/route-imagemob.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/mobile/route-imagemob.jpg");
-  height: 100vh;
-  background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-}
+  /* About */
 
-/* About */
-
-p.about-desc {
+  p.about-desc {
     margin-bottom: 3rem;
-}
+  }
 
-/* Skoot Routes */
+  .about-img1,
+  .about-img2,
+  .about-img3 {
+    height: 50vh;
+  }
 
-p.skoot-route {
+  /* Skoot Routes */
+
+  p.skoot-route {
     margin: 50px;
+  }
 }
 
+/*-----------------------Larger Screens--------------------------------*/
 
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  /* Home */
+
+  /* Adjusts images into frame on Tablet*/
+  .main-image {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.4)),
+        to(rgba(0, 0, 0, 0.4))
+      ),
+      url("../images/mobile/route-imagemob.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/route-imagemob.jpg");
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+
+  /* About */
+
+  p.about-desc {
+    margin-bottom: 3rem;
+  }
+
+  .about-img1,
+  .about-img2,
+  .about-img3 {
+    height: 50vh;
+  }
+
+  /* Skoot Routes */
+
+  p.skoot-route {
+    margin: 50px;
+  }
 
 }
