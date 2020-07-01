@@ -168,6 +168,164 @@ Intuitive navigation fixed to the top of the the page that resizes for mobile de
   <img width="175" height="50" src="">
 </p>
 
+###### Add Your Route +
+
+* When the user clicks on this button it will allow them to add their own route to the public routes page on the website and also adds it into the database.
+
+<p align="center">
+  <img width="175" height="50" src="">
+</p>
+
+###### Edit & Delete
+
+* Allows a user to edit or delete a route from the site and also the database.
+
+<p align="center">
+  <img width="175" height="50" src="">
+</p>
+
+### Footer Divider
+
+* The footer divider is featured on the mobile page of the website and it contains two clickable logos which will take you to external sites to download our mobile app.
+
+<p align="center">
+  <img width="175" height="50" src="">
+</p>
+
+1. [Google Play Store](https://play.google.com/store)
+2. [Appstore](https://www.apple.com/ios/app-store/)
+
+### Footer
+
+* The footer is featured on all pages and contains clickable icons that will take you to each of our social media platforms.
+
+1. [Facebook](https://www.facebook.com/)
+2. [Twitter](https://twitter.com/)
+3. [Instagram](https://www.instagram.com/)
+4. [Youtube](https://www.youtube.com/)
+
+### Future Plans
+
+- To allow the user to create an account so that the routes they create are only editable by themself and nobody else.
+
+- Introduce a live version of google maps so that the map displays the route in each card instead of just an outside link.
+
+- To add user reviews to each of the routes added.
+
+- To add a view counter to each individual route so the user can see how many people have viewed their route.
+
+- Search functionality to search by multiple features such as length, Location, route type etc.
+
+- In the sign up newsletter modal, I would like to have the social icons fully functioning so that the user could sign up to the newsletter by signing up through their social media platforms.
+
+## Technologies Used:
+
+<hr>
+
+The Technologies I used to build this project are as follows,
+
+[HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+* Buiding the foundation of my project.
+
+[CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+* For custom styling of my project.
+
+[Javascript](https://www.javascript.com/)
+
+* To implement features and user input for the website.
+
+[Python}(https://www.python.org/)
+
+* Used as back end programming language.
+
+[Flask](https://flask.palletsprojects.com/en/1.1.x/)
+
+* Used as a microframework.
+
+[Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+
+* Used for templating with Flask.
+
+[JQuery](https://jquery.com/)
+
+* The project uses JQuery to simplify DOM manipulation.
+
+[Bootstrap](https://getbootstrap.com/)
+
+* The framework i used to achieve the album card layout, my navbar, gallery section & contact form.
+
+[Font Awesome](https://fontawesome.com/)
+
+* Used for all icons within the footer and buttons.
+
+[Google Fonts](https://fonts.google.com/)
+
+* Used for the typography of the project.
+
+[EmailJS](https://www.emailjs.com/)
+
+* Used to send an auto-reply mail on user sign up to newsletter
+
+[GitHub](https://github.com/)
+
+* Used to store & manage my code.
+
+[GitPod](https://www.gitpod.io/)
+
+* My IDE of choice to develop my project.
+
+[Heroku](https://id.heroku.com/login)
+
+* A cloud platform enabling deployment for this CRUD application.
+    
+### Tools Used:
+
+[Tinypng](https://tinypng.com/) 
+
+* Used to compress images without affecting image quality and to achieve faster image load times.
+
+[Balsamiq](https://balsamiq.com/)
+
+* Used for the creation of my pre-build wireframes showing the main elements and differences in size of same through small to large screen sizes.
+
+[Favicon Generator](https://www.favicon-generator.org/)
+
+* Used to create favicon from custom Logo I created for the project.
+
+[Adobe Color Wheel](https://color.adobe.com/create)
+
+* Helped achieve color scheme.
+
+[W3C Mark-up Validation](https://validator.w3.org/) and [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) 
+
+* where used to check the validity of the project's code. 
+
+[JSHint](https://jshint.com/)
+
+* Using JSHint to validate the project's Javascript
+
+[PEP 8 Online Validator](http://pep8online.com/) 
+
+* To check my python code to be consistent with PEP8 requirements.
+
+[Autoprefixer CSS](https://autoprefixer.github.io/)
+
+* Used to check for possible webkits required in the applications stylesheet ensuring Cross-browser support.
+
+[MongoDB](https://www.mongodb.com/)
+
+* Non-relational database used.
+
+[Google Chrome DevTools] (https://bit.ly/3giMhjy)
+
+* Used to test the application's functionality and the CSS visualisation, as well as the correct style properties to override Bootstraps default settings.
+
+[Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html)
+
+* Used to crop, re-size, editing and creation of images.
+
 
 
 
