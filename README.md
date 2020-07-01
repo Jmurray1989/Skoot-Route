@@ -18,7 +18,7 @@ Having previously created a scooter shop website for my MS2 and briefly touching
 
 I built this website using all the content we learned on the course and more using features like EmailJS, Javascript, & Flask features.
  
-### The goal of this website is to:
+#### The goal of this website is to:
 
 Is to give people the freedom to explore unknown or popular places that people like taking their scooters for a ride and by allowing them to share it with others.
 They can do this by the way of sharing their route links from google maps and by giving a brief description as to why they love it so much and hopefully encourage people to explore the unknown or hidden gems that they have found.
@@ -40,6 +40,21 @@ They can do this by the way of sharing their route links from google maps and by
 5. As a user i want to be able to share my routes in a public place for others to enjoy.
 
 6. As a user I want to view the site from any device (mobile, tablet, desktop).
+
+## Design
+
+<img src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/device-mockup.png">
+
+The project utilises the [Bootstrap 4](https:/getbootstrap.com/) framework to ensure Mobile first fully responsive design. When considering the design elements for this project, a modern/vivid color scheme is what came to mind first.
+
+### Font:
+
+The project has a main font of 'Maven Pro' which was imported via css from Google Fonts, with the backup font being set to a default of 'Sans-serif'. The clean feel gave the website a modern look but also making each character very easy to read for the user.
+
+### Logo:
+
+The main idea of this logo was taken from this [site](https://skoot.ie/) and by using photoshop i was able to add in a few of my own elements to help me create my desired logo.
+My Logo can be seen in the navbar of my site and is used as 'Home' button across all pages.
 
 ## Features
 
