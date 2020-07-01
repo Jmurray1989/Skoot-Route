@@ -8,7 +8,7 @@ Tasked to create a website combining knowledge from the Python Fundamentals, Pra
 
 ## Introducing you to
 <p align="center">
-  <img width="450" height="350" src="static/images/skoot-route-logo.png">
+  <img width="400" height="350" src="static/images/skoot-route-logo.png">
 </p>
 
 
@@ -55,6 +55,8 @@ The project has a main font of 'Maven Pro' which was imported via css from Googl
 
 The main idea of this logo was taken from this [site](https://skoot.ie/) and by using photoshop i was able to add in a few of my own elements to help me create my desired logo.
 My Logo can be seen in the navbar of my site and is used as 'Home' button across all pages.
+
+<img src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/navbar.png">
 
 ## Features
 
