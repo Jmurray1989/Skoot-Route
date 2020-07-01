@@ -12,14 +12,34 @@ Tasked to create a website combining knowledge from the Python Fundamentals, Pra
 </p>
 
 
-## UX
+#### The Idea:
+
+Having previously created a scooter shop website for my MS2 and briefly touching on Skoot Routes within that, I decided for this project that i was going to take that idea and build on it. The site is based around Skoot routes that people can use to find unknown places around major cities while on holidays or just travelling around there own town on their scooters.
+
+I built this website using all the content we learned on the course and more using features like EmailJS, Javascript, & Flask features.
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+### The goal of this website is to:
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+Is to give people the freedom to explore unknown or popular places that people like taking their scooters for a ride and by allowing them to share it with others.
+They can do this by the way of sharing their route links from google maps and by giving a brief description as to why they love it so much and hopefully encourage people to explore the unknown or hidden gems that they have found.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+## User Experience
+
+<hr>
+
+### User Stories:
+
+1. As a user I want to easily navigate the site across all pages.
+
+2. As a user I want to be able to have the ability to view pre-made (public) skoot routes.
+
+3. As a user I want to sign up to a newsletter so i am kept up to date with the latest routes
+
+4. As a user i want to be able to create, edit & delete my own routes.
+
+5. As a user i want to be able to share my routes in a public place for others to enjoy.
+
+6. As a user I want to view the site from any device (mobile, tablet, desktop).
 
 ## Features
 
