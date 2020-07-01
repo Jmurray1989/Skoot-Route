@@ -8,7 +8,7 @@ Tasked to create a website combining knowledge from the Python Fundamentals, Pra
 
 ## Introducing you to
 <p align="center">
-  <img width="450" height="350" src="static/images/skoot-route-logo.png">
+  <img width="400" height="350" src="static/images/skoot-route-logo.png">
 </p>
 
 
@@ -45,7 +45,10 @@ They can do this by the way of sharing their route links from google maps and by
 
 <img src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/device-mockup.png">
 
-The project utilises the [Bootstrap 4](https:/getbootstrap.com/) framework to ensure Mobile first fully responsive design. When considering the design elements for this project, a modern/vivid color scheme is what came to mind first.
+The website contains the key CRUD functionality and uses a document based database MongoDB.
+The user functionality is created using Flask, HTML & CSS. The project utilises the Bootstrap framework to ensure Mobile first fully responsive design. When considering the design elements for this project, a modern/vivid color scheme is what came to mind first and it includes all the main points of a website such as the navigation bar and Footer elements.
+
+The project is version controlled via Git & Github and is deployed via Heroku. All environment variables are held in a git ignored file and held secret to ensure the project meets standard security protocols.
 
 ### Font:
 
@@ -53,72 +56,118 @@ The project has a main font of 'Maven Pro' which was imported via css from Googl
 
 ### Logo:
 
-The main idea of this logo was taken from this [site](https://skoot.ie/) and by using photoshop i was able to add in a few of my own elements to help me create my desired logo.
+The main idea of this logo was taken from this [site](https://skoot.ie/) and by using photoshop i was able to add in a few of my own elements to help me create my desired logo.  Its a very clean and simple logo but by incorporating the two O's to the body of the scooter made it really stand out and grab attention.
+
 My Logo can be seen in the navbar of my site and is used as 'Home' button across all pages.
+
+##### As seen here:
+
+<img src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/navbar.png">
+
+### Color Scheme:
+
+To help me choose my color scheme i used [Adobe Color Wheel](https://color.adobe.com/create).
+
+This process took a long time during the wireframe stage. In the end i decided on this color scheme as it is quite vivid bold and dark all at the same time. The bright orange gives it a very vivid feel and helps to highlight important points against the black backdrop and at the same time it gives the website a dark and bold feel. I also used white with a mix of an orange gradient to just break the page up from being a standard white background.
+
+Three primary colors were chosen when creating this project:
+
+- ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000` 
+- ![#fd9a05](https://placehold.it/15/fd9a05/000000?text=+) `#fd9a05` 
+- ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`
+
+The three colours are featured heavily across the site. 
+
+The navbar is colored in ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000`, which offered a dark background to the logo and the nav-link elements
+of ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` and ![#fd9a05](https://placehold.it/15/fd9a05/000000?text=+) `#fd9a05`.
+
+The call to action buttons utilised the same navbar coloring of, ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000`, as their borders.
+When not active, focused or hovered the main background color was set to, ![#fd9a05](https://placehold.it/15/fd9a05/000000?text=+) `#fd9a05` with the font inside being set to black. When an action or hover was captured on the button, it would turn the font to white, to show the user that this element is interact-able and something will happen when pressed.
+
+To give the website a more colorful feel & to create a better visual experience for the user i added a subtle gradient effect to the route pages using white to begin with and then adding the gradient effect working its way into orange.
+
+### Wireframes:
+
+To build my wireframes i used [Balsamiq](https://balsamiq.com/).
+
+All wireframes created for this project can be found [Here]("/").
+
+Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
+
+#### Base Template:
+
+The base.html parent template contains all the default components for each page.
+A head element containing the meta data and all relevant links to Title, Logo, Favicon, Frameworks, custom CSS & JS files for the application.
+A navbar containing the logo and navigation links. The navbar also contains a sign up modal which can be accessed across all pages. 
+Our footer which contains our social icons, all this can be achieved by using jinja templating language.
+
+{% block content %}
+{& endblock %}
+
+* Base Template Wireframe
+
+<img height="300" width="300" src="">
+
+#### All other wireframe examples for different viewports can be found below:-
+
+* Desktop
+
+<img height="300" width="300" src="">
+
+* Mobile
+
+<img height="300" width="300" src="">
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+<hr>
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+* This is a summary of the features i have put in place on my project but also the features i hope to add in the future.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+* All pages on the website follow the same principle with a fixed navbar, main image, a header, a footer with links to all of our social media platforms.
 
-### Features Left to Implement
-- Another feature idea
+<strong>The project has several key features:</strong>
 
-## Technologies Used
+The project boasts several key features:
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+Create: The user being able to create a new skoot route via the create route form.
+Read: Is implemented on the site showing the user the public routes that themselves & others have created.
+Update: Present for a user to update a route and push it back to the database.
+Delete: Present for a user in that they can delete a route from the site and the database.
 
 
-## Testing
+### Navbar
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+The navbar is featured on all pages and is used to navigate the site.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+ The navbar links are on the right side of the navbar. I have 6 links in total:-
+- Home
+- About
+- Skoot Routes 
+- Public Routes
+- Mobile
+- Sign Up (which is linked to a modal)
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+Intuitive navigation fixed to the top of the the page that resizes for mobile devices with the hamburger icon. When pressed it expands to show the other navigable pages. On desktop i have used a hover function that will show the user which navpage they are highlighting over and to show the user that this is interact-able and something will happen when clicked.
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+### Buttons
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+###### Sign Up
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+* On the homescreen and across all pages i use a sign up button which is linked to a modal which allows the user to sign up to The Green-Machine newsletter.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+<p align="center">
+  <img width="175" height="50" src="">
+</p>
 
-## Deployment
+###### Lets Skoot!
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+* When the user clicks on this button of their desired route it will bring them to google maps which will show them the route they can take on their scooter around dublin landmarks and sites.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+<p align="center">
+  <img width="175" height="50" src="">
+</p>
 
 
-## Credits
 
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
-### Media
-- The photos used in this site were obtained from ...
-
-### Acknowledgements
-
-- I received inspiration for this project from X
