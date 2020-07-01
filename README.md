@@ -125,7 +125,16 @@ Our footer which contains our social icons, all this can be achieved by using ji
 * This is a summary of the features i have put in place on my project but also the features i hope to add in the future.
 
 * All pages on the website follow the same principle with a fixed navbar, main image, a header, a footer with links to all of our social media platforms.
+
 <strong>The project has several key features:</strong>
+
+The project boasts several key features:
+
+Create: The user being able to create a new skoot route via the create route form.
+Read: Is implemented on the site showing the user the public routes that themselves & others have created.
+Update: Present for a user to update a route and push it back to the database.
+Delete: Present for a user in that they can delete a route from the site and the database.
+
 
 ### Navbar
 
@@ -140,6 +149,24 @@ The navbar is featured on all pages and is used to navigate the site.
 - Sign Up (which is linked to a modal)
 
 Intuitive navigation fixed to the top of the the page that resizes for mobile devices with the hamburger icon. When pressed it expands to show the other navigable pages. On desktop i have used a hover function that will show the user which navpage they are highlighting over and to show the user that this is interact-able and something will happen when clicked.
+
+### Buttons
+
+###### Sign Up
+
+* On the homescreen and across all pages i use a sign up button which is linked to a modal which allows the user to sign up to The Green-Machine newsletter.
+
+<p align="center">
+  <img width="175" height="50" src="">
+</p>
+
+###### Lets Skoot!
+
+* When the user clicks on this button of their desired route it will bring them to google maps which will show them the route they can take on their scooter around dublin landmarks and sites.
+
+<p align="center">
+  <img width="175" height="50" src="">
+</p>
 
 
 
