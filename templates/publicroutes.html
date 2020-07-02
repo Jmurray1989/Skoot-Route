@@ -1,18 +1,23 @@
 {% extends 'base.html' %} {% block content %}
 
-<!--Main Header-->
-
-<h1 class="public-header">Public Routes</h1>
-<div class="how_video">
-  <a href="https://youtu.be/kOp3pY5c5zI" target="_blank" class="video"
-    ><i class="fas fa-film"></i> Find out how to add a route here <i class="fas fa-film"></i></a
-  >
-</div>
-
-<!--Route Cards-->
+<!--Route Section-->
 
 <section class="route-section">
+
+  <!--Main Header-->
+
+  <h1 class="public-header">Public Routes</h1>
+  <div class="how_video">
+    <a href="https://youtu.be/kOp3pY5c5zI" target="_blank" class="video"
+      ><i class="fas fa-film"></i> Find out how to add a route here
+      <i class="fas fa-film"></i
+    ></a>
+  </div>
+
   <div class="container">
+
+    <!--Route Cards-->
+
     <div class="row route-cards-row">
       {% for route in routes %}
       <div class="col-sm-12 col-md-5 route-cards card">
@@ -62,7 +67,7 @@
 <!--Button-->
 
 <div class="addroute-button">
-  <a type="submit" href="{{ url_for('addroute') }}" class="go-button btn btn-lg"
+  <a href="{{ url_for('addroute') }}" class="go-button btn btn-lg" role="button"
     >Add Your Route <i class="fas fa-plus"></i
   ></a>
 </div>
