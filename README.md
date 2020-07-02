@@ -236,7 +236,7 @@ The Technologies I used to build this project are as follows,
 
 * To implement features and user input for the website.
 
-[Python}(https://www.python.org/)
+[Python](https://www.python.org/)
 
 * Used as back end programming language.
 
@@ -318,7 +318,7 @@ The Technologies I used to build this project are as follows,
 
 * Non-relational database used.
 
-[Google Chrome DevTools] (https://bit.ly/3giMhjy)
+[Google Chrome DevTools](https://bit.ly/3giMhjy)
 
 * Used to test the application's functionality and the CSS visualisation, as well as the correct style properties to override Bootstraps default settings.
 
@@ -326,6 +326,37 @@ The Technologies I used to build this project are as follows,
 
 * Used to crop, re-size, editing and creation of images.
 
+## Testing
 
+<hr>
+
+The website has been tested across multiple browsers and on mobile devices to ensure compatibility and responsiveness of the site. Continuous testing for this application was carried out throughout the entire lifetime of the build. This was achieved through Chrome Devtools and it was used constantly to test on as many devices as possible from Android to Apple phones & tablet dimensions, and also larger device sizes. The website was tested constantly throughout the build at home using devices i had on hand such as a Samsung Galaxy S10 & S8, a Xiaomi Redmi Pro 8 and for the tablet size i used an Amazon Fire HD 8.
+
+If a bug arose during testing it was dealt with during the build of the project. The build and the fix where then pushed to the repository for the latest changes to take affect on the deployed application via automatic build & deploy function set up in Heroku.
+
+### Desktop
+
+- Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- IE
+- Opera
+
+### Mobile Devices
+
+- Xiaomi Redmi Pro 8
+- Galaxy S10, S8
+- iPad + iPad Pro (using Chrome devtools)
+- Amazon Fire Hd 8
+
+I used JSHint to validate the project's Javascript file which i configured to accept jQuery & ES6 New JS features, It returned 0 warnings. 
+
+I used [W3C Mark-up Validation](https://validator.w3.org/) and [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to validate my html and css code. [W3C Mark-up Validation](https://validator.w3.org/) Unfortunately the W3C Validator for HTML does not understand the Jinja templating syntax, so it therefore shows a lot of errors with regards to {{ variables }}, {% for %} {% endfor %}, etc. Aside from the Jinja warnings and errors, all of the remaining code is perfectly validating 
+
+### Known Issues
+
+
+
+As Safari is no longer developed for Windows I used a site known as [LambdaTest](https://www.lambdatest.com/) to run my code in a live view for mac and safari software. It returned a few errors however as this is not official software i cannot be sure the results given are accurate. When I tested my project through chrome and other browsers on this site it showed me errors which i do not have on these browsers when ran locally.
 
 
