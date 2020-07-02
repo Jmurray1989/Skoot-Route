@@ -425,14 +425,14 @@ echo web: python run.py > Procfile
 
 4. In the Heroku Settings tab, click on the Reveal Config Vars button to configure environmental variables as follows:
 
-IP : 0.0.0.0
-PORT : 5000
-MONGO_URI : <link to your Mongo DB>
-MONGO_DBNAME : <Mongo DB name>
+* IP : 0.0.0.0
+* PORT : 5000
+* MONGO_URI : <link to your Mongo DB>
+* MONGO_DBNAME : <Mongo DB name>
 
 5. Once the above was done, the app was deployed via this link: "https://skoot-route.herokuapp.com/". 
 
-My repository can be found here:
+6. My repository can be found here:
 
 * https://github.com/Jmurray1989/Skoot-Route
 
