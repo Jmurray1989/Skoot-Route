@@ -128,13 +128,17 @@ Our footer which contains our social icons, all this can be achieved by using ji
 
 <strong>The project has several key features:</strong>
 
-The project boasts several key features:
+One of the main features is the CRUD functionality which is vital to this projects setup.
 
 Create: The user being able to create a new skoot route via the create route form.
+
 Read: Is implemented on the site showing the user the public routes that themselves & others have created.
+
 Update: Present for a user to update a route and push it back to the database.
+
 Delete: Present for a user in that they can delete a route from the site and the database.
 
+In order to test the CRUD functionality operated correctly i created, edited & updated over 50 routes to make sure everything operated correctly on the site and also that the database updated accordingly. I also had family and friends and even my mentor Gerard Mc Bride set up their own routes and make sure they found no issues while doing so.
 
 ### Navbar
 
@@ -157,7 +161,7 @@ Intuitive navigation fixed to the top of the the page that resizes for mobile de
 * On the homescreen and across all pages i use a sign up button which is linked to a modal which allows the user to sign up to The Green-Machine newsletter.
 
 <p align="center">
-  <img width="175" height="50" src="">
+  <img width="175" height="55" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/sign-up.png">
 </p>
 
 ###### Lets Skoot!
@@ -165,7 +169,7 @@ Intuitive navigation fixed to the top of the the page that resizes for mobile de
 * When the user clicks on this button of their desired route it will bring them to google maps which will show them the route they can take on their scooter around dublin landmarks and sites.
 
 <p align="center">
-  <img width="175" height="50" src="">
+  <img width="175" height="55" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/lets-skoot.png">
 </p>
 
 ###### Add Your Route +
@@ -173,7 +177,7 @@ Intuitive navigation fixed to the top of the the page that resizes for mobile de
 * When the user clicks on this button it will allow them to add their own route to the public routes page on the website and also adds it into the database.
 
 <p align="center">
-  <img width="175" height="50" src="">
+  <img width="175" height="55" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/add-route.png">
 </p>
 
 ###### Edit & Delete
@@ -181,7 +185,7 @@ Intuitive navigation fixed to the top of the the page that resizes for mobile de
 * Allows a user to edit or delete a route from the site and also the database.
 
 <p align="center">
-  <img width="175" height="50" src="">
+  <img width="175" height="55" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/edit-delete.png">
 </p>
 
 ### Footer Divider
@@ -189,7 +193,7 @@ Intuitive navigation fixed to the top of the the page that resizes for mobile de
 * The footer divider is featured on the mobile page of the website and it contains two clickable logos which will take you to external sites to download our mobile app.
 
 <p align="center">
-  <img width="175" height="50" src="">
+  <img width="175" height="55" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/apps.png">
 </p>
 
 1. [Google Play Store](https://play.google.com/store)
@@ -205,6 +209,8 @@ Intuitive navigation fixed to the top of the the page that resizes for mobile de
 4. [Youtube](https://www.youtube.com/)
 
 ### Future Plans
+
+In an ideal world, there are a couple items that I would've loved to have completed as well, but just didn't have the time or knowledge just yet as to how to implement these features.
 
 - To allow the user to create an account so that the routes they create are only editable by themself and nobody else.
 
@@ -236,7 +242,7 @@ The Technologies I used to build this project are as follows,
 
 * To implement features and user input for the website.
 
-[Python}(https://www.python.org/)
+[Python](https://www.python.org/)
 
 * Used as back end programming language.
 
@@ -318,7 +324,7 @@ The Technologies I used to build this project are as follows,
 
 * Non-relational database used.
 
-[Google Chrome DevTools] (https://bit.ly/3giMhjy)
+[Google Chrome DevTools](https://bit.ly/3giMhjy)
 
 * Used to test the application's functionality and the CSS visualisation, as well as the correct style properties to override Bootstraps default settings.
 
@@ -326,6 +332,142 @@ The Technologies I used to build this project are as follows,
 
 * Used to crop, re-size, editing and creation of images.
 
+## Testing
+
+<hr>
+
+The website has been tested across multiple browsers and on mobile devices to ensure compatibility and responsiveness of the site. Continuous testing for this application was carried out throughout the entire lifetime of the build. This was achieved through Chrome Devtools and it was used constantly to test on as many devices as possible from Android to Apple phones & tablet dimensions, and also larger device sizes. The website was tested constantly throughout the build at home using devices i had on hand such as a Samsung Galaxy S10 & S8, a Xiaomi Redmi Pro 8 and for the tablet size i used an Amazon Fire HD 8.
+
+If a bug arose during testing it was dealt with during the build of the project. The build and the fix where then pushed to the repository for the latest changes to take affect on the deployed application via automatic build & deploy function set up in Heroku.
+
+### Desktop
+
+- Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- IE
+- Opera
+
+### Mobile Devices
+
+- Xiaomi Redmi Pro 8
+- Galaxy S10, S8
+- iPad + iPad Pro (using Chrome devtools)
+- Amazon Fire Hd 8
+
+I used [W3C Mark-up Validation](https://validator.w3.org/) and [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to validate my html and css code. Unfortunately the W3C Validator for HTML does not understand the Jinja templating syntax, so it therefore shows a lot of errors with regards to {{ variables }}, {% for %} {% endfor %}, etc. Aside from the Jinja warnings and errors, all of the remaining code is perfectly validating 
 
 
+I used JSHint to validate the project's Javascript file which i configured to accept jQuery & ES6 New JS features, It returned 0 warnings. 
+
+I used PEP8 online to make sure my Python files are compliant to current standards.
+
+### Known Issues
+
+
+
+As Safari is no longer developed for Windows I used a site known as [LambdaTest](https://www.lambdatest.com/) to run my code in a live view for mac and safari software. It returned a few errors however as this is not official software i cannot be sure the results given are accurate. When I tested my project through chrome and other browsers on this site it showed me errors which i do not have on these browsers when ran locally.
+
+### User Story Testing
+
+1. As a user I want to easily navigate the site across all pages.
+
+- This was made possible by the navbar which features links to different pages and also the buttons placed around as shortcuts to different parts of the site. 
+
+2. As a user I want to be able to have the ability to view pre-made (public) skoot routes.
+
+- To view these you can either go to the skoot routes page which are pre made routes by us for you or go to the public pages section where other users have created routes for use and viewing.
+
+3. As a user I want to sign up to a newsletter so i am kept up to date with the latest routes.
+
+- Located in the navbar is a 'Sign-Up' button which will allow the user to subscribe to our newsletter and they will receive a notification email on receipt of their request.
+
+4. As a user i want to be able to create, edit & delete my own routes.
+
+- This feature was added to the public routes page where the user can add, edit or delete the routes they created.
+
+5. As a user i want to be able to share my routes in a public place for others to enjoy.
+
+- These can be seen in the public routes section of the website.
+
+6. As a user I want to view the site from any device (mobile, tablet, desktop).
+
+- The website was developed with mobile first responsive design which will scale up for larger devices.
+
+## Deployment
+
+### Remote Deployment
+
+This site is currently deployed on Heroku using the master branch on GitHub. To implement this project on Heroku, the following steps were taken:
+
+1. Create a requirements.txt file so Heroku can install the required dependencies to run the app.
+sudo pip3 freeze --local > requirements.txt
+
+2. Create a Procfile to tell Heroku what type of application is being deployed, and how to run it.
+echo web: python run.py > Procfile
+
+3. Sign up for a free Heroku account, create your project app, and click the Deploy tab, at which point you can Connect GitHub as the Deployment Method, and select Enable Automatic Deployment.
+
+4. In the Heroku Settings tab, click on the Reveal Config Vars button to configure environmental variables as follows:
+
+IP : 0.0.0.0
+PORT : 5000
+MONGO_URI : <link to your Mongo DB>
+MONGO_DBNAME : <Mongo DB name>
+
+5. Once the above was done, the app was deployed via this link: "https://skoot-route.herokuapp.com/". 
+
+My repository can be found here:
+
+* https://github.com/Jmurray1989/Skoot-Route
+
+### Clone Repo
+
+To clone the repository:
+
+1. Select the Repository from the Github Dashboard.
+
+2. Click on the "Clone or download" dropdown button which is located beside the Gitpod button to the right.
+
+3. Click on the "clipboard icon" to the right to copy the web URL.
+
+4. Open your preferred Integrated Development Environment (IDE) and navigate to the terminal window.
+
+5. Change the directory to where you want to clone the repository too.
+
+6. Paste the Git URL copied from above and click "Ok". .
+
+## Credits
+
+<hr>
+
+### Content
+
+- The modal & the footer divider used was sourced from this [Site](https://mdbootstrap.com/).
+
+- The Skoot Route Idea was based on the design from this site [Here](https://skoot.ie/pages/dublin-skoot-routes). 
+
+- The use of the CRUD functionality was assisted by the course content from the Code Institute Course.
+
+- How to set up enviroment variables and store mongo db username and passwords in env.py file and put into .gitignore was assisted by a blogpost from CI in Slack.
+
+- Creating custom 404 & 500 pages from Flask Documentation.
+
+### Code
+
+For assistance i have used the following sites:-
+
+* [Stack Overflow](https://stackoverflow.com/)
+* [CSS Tricks](https://css-tricks.com/)
+* [W3Schools](https://www.w3schools.com/)
+
+### Media
+
+- The photos used in this site were obtained from google images searches. As it is for educational purpose and not for profit i was made aware that it may not be neccessary to ask for permission.
+
+### Acknowledgements
+
+- I would like to thank those in Slack, the Tutor Support and my Mentor Gerard McBride for assisting with me with any queries i had during this project. You and all the advice have really helped me during the course of this build.
+
+Disclaimer: This project and its content were created for educational purposes only as part of the Code Institute Course for Milestone 3 Grading.
 
