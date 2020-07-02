@@ -193,7 +193,7 @@ Intuitive navigation fixed to the top of the the page that resizes for mobile de
 * The footer divider is featured on the mobile page of the website and it contains two clickable logos which will take you to external sites to download our mobile app.
 
 <p align="center">
-  <img width="175" height="55" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/apps.png">
+  <img width="200" height="55" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/apps.png">
 </p>
 
 1. [Google Play Store](https://play.google.com/store)
@@ -336,6 +336,8 @@ The Technologies I used to build this project are as follows,
 
 <hr>
 
+Manual testing was my preferred choice for this project.
+
 The website has been tested across multiple browsers and on mobile devices to ensure compatibility and responsiveness of the site. Continuous testing for this application was carried out throughout the entire lifetime of the build. This was achieved through Chrome Devtools and it was used constantly to test on as many devices as possible from Android to Apple phones & tablet dimensions, and also larger device sizes. The website was tested constantly throughout the build at home using devices i had on hand such as a Samsung Galaxy S10 & S8, a Xiaomi Redmi Pro 8 and for the tablet size i used an Amazon Fire HD 8.
 
 If a bug arose during testing it was dealt with during the build of the project. The build and the fix where then pushed to the repository for the latest changes to take affect on the deployed application via automatic build & deploy function set up in Heroku.
@@ -364,6 +366,19 @@ I used PEP8 online to make sure my Python files are compliant to current standar
 
 ### Known Issues
 
+I found 3 issues with the Internet Explorer browser all other browsers tested fine.
+
+#### 1. The hero image text overlay has an issue where the underline is not the color - ![#fd9a05](https://placehold.it/15/fd9a05/000000?text=+) `#fd9a05` it sets to the default white.
+
+<img src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/issues/issue1.png">
+
+#### 2. I also found underline does not work across any page. - ![#fd9a05](https://placehold.it/15/fd9a05/000000?text=+) `#fd9a05`.
+
+<img src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/issues/issue2.png">
+
+#### 3. I found an issue where the homepage button lets skoot is not the correct color- ![#fd9a05](https://placehold.it/15/fd9a05/000000?text=+) `#fd9a05` It also appears to have the same issue in the add route buttons.
+
+<img src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/issues/issue3.png">
 
 
 As Safari is no longer developed for Windows I used a site known as [LambdaTest](https://www.lambdatest.com/) to run my code in a live view for mac and safari software. It returned a few errors however as this is not official software i cannot be sure the results given are accurate. When I tested my project through chrome and other browsers on this site it showed me errors which i do not have on these browsers when ran locally.
