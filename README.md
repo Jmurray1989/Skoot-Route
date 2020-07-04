@@ -90,7 +90,7 @@ To give the website a more colorful feel & to create a better visual experience 
 
 To build my wireframes i used [Balsamiq](https://balsamiq.com/).
 
-All wireframes created for this project can be found [Here]("https://github.com/Jmurray1989/Skoot-Route/tree/master/static/wireframes/").
+#### All wireframes created for this project can be found [Here](https://github.com/Jmurray1989/Skoot-Route/tree/master/static/wireframes/).
 
 Each element was structurally planned out at this stage and even during the physical build of the application there was not much deviation from the original planning. Each page was rendered as a wireframe in all viewport sizes to show the difference between them and to show how the elements would react to differing viewport sizes.
 
@@ -106,13 +106,13 @@ Our footer which also contains our social icons. All of this was possible by usi
 
 * Base Template Wireframe
 
-<img height="300" width="300" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/wireframes/desktop/Base-Template-Desktop.png">
+<img height="300" width="450" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/wireframes/desktop/Base-Template-Desktop.png">
 
 #### Some examples for different viewports can be found below:-
 
 * Desktop
 
-<img height="300" width="300" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/wireframes/desktop/Home-Desktop.png">
+<img height="300" width="450" src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/wireframes/desktop/Home-Desktop.png">
 
 * Mobile
 
