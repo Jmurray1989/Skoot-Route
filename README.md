@@ -99,7 +99,7 @@ Each element was structurally planned out at this stage and even during the phys
 The base.html parent template contains all the default components for each page.
 A head element containing the meta data and all relevant links to Title, Logo, Favicon, Frameworks, custom CSS & JS files for the application.
 A navbar containing the logo and navigation links. The navbar also contains a sign up modal which can be accessed across all pages. 
-Our footer which contains our social icons, all this can be achieved by using jinja templating language.
+Our footer which also contains our social icons. All of this was possible by using the jinja templating language and this allowed me to use the base template across all pages.
 
 {% block content %}
 {& endblock %}
