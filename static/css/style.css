@@ -835,4 +835,10 @@ h1 {
     margin: 50px;
   }
 
+  /* Add/Edit Routes */
+
+  .footer-copyright {
+    padding-bottom: 3rem;
+}
+
 }
