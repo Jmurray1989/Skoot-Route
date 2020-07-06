@@ -790,6 +790,12 @@ h1 {
   p.skoot-route {
     margin: 50px;
   }
+
+    /* Add/Edit Routes */
+
+  .footer-copyright {
+    padding-bottom: 1.5rem;
+}
 }
 
 /*-----------------------Larger Screens--------------------------------*/
