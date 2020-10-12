@@ -43,12 +43,7 @@ They can do this by the way of sharing their route links from google maps and by
 
 ## Design
 
-<img src="https://github.com/Jmurray1989/Skoot-Route/blob/master/static/images/device-mockup.png">
 
-The website contains the key CRUD functionality and uses a document based database MongoDB.
-The user functionality is created using Flask, HTML & CSS. The project utilises the Bootstrap framework to ensure Mobile first fully responsive design. When considering the design elements for this project, a modern/vivid color scheme is what came to mind first and it includes all the main points of a website such as the navigation bar and Footer elements.
-
-The project is version controlled via Git & Github and is deployed via Heroku. All environment variables are held in a git ignored file and held secret to ensure the project meets standard security protocols.
 
 ### Font:
 
